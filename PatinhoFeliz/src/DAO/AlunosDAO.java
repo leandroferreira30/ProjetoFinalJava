@@ -87,6 +87,7 @@ public class AlunosDAO {
             pstm.setInt(1, objalunosdto.getId_alunos());
             
             pstm.execute();
+            JOptionPane.showMessageDialog(null, "Aluno excluído com sucesso!");
             pstm.close();
             
         } catch (SQLException erro) {
